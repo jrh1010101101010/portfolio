@@ -1,40 +1,71 @@
+import { Link } from "react-router-dom"
+import Carousel from "react-multi-carousel"
+import "react-multi-carousel/lib/styles.css"
 
+export default function HomeProject () {
+    const responsive = {
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
+            items: 1
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    }
 
-export default function HomeProject (){
+    const projects = [
+        {
+            title: "Tic Tac Toe",
+            description: "A basic game of tic tac toe with a with game counters and sounds included!",
+            img: "https://dummyimage.com/300x200/000/fff",
+            link: "https://git.generalassemb.ly/jhamblin/project1"
+        },
+        {
+            title: "Workout crud app",
+            description: "A CRUD app built with express to record workouts completed. User search included to find workouts from other users and more!",
+            img: "https://dummyimage.com/300x200/000/fff",
+            link: "https://github.com/jrh1010101101010/project2"
+        },
+        {
+            title: "Servo app with google maps",
+            description: "A full stack application using the google maps api and a sql database to locate and mark service stations using google maps!",
+            img: "https://dummyimage.com/300x200/000/fff",
+            link: "https://github.com/henry-rennell/servo_api"
+        },
+        {
+            title: "Meal planner app",
+            description: "A react app using edamam api and firebase and to store user data and save information to plan the week aheads meals",
+            img: "https://dummyimage.com/300x200/000/fff",
+            link: "https://github.com/jrh1010101101010/react_meal_planner_app"
+        }
+    ]
+
     return (
         <div className="HomeProjects">
             <h1>Projects</h1>
-            <div className="project">
-                <h3 className="title">Tic Tac Toe</h3>
-                <div className="project-info-wrapper">
-                    <img src="https://dummyimage.com/300x200/000/fff" alt="" />
-                    <p>A basic game of tic tac toe with a with game counters and sounds included!</p>    
-                </div>
-                <a href="https://git.generalassemb.ly/jhamblin/project1">Link to repo here!</a>
-            </div>
-            <div className="project">
-                <h3 className="title">Workout crud app</h3>
-                <div className="project-info-wrapper">
-                    <img src="https://dummyimage.com/300x200/000/fff" alt="" />
-                    <p>A CRUD app built with express to record workouts completed. User search included to find workouts from other users and more! </p>    
-                </div>
-                <a href="https://github.com/jrh1010101101010/project2">Link to repo here!</a>
-            </div>
-            <div className="project">
-                <h3 className="title">Servo app with google maps</h3>
-                <div className="project-info-wrapper">
-                    <img src="https://dummyimage.com/300x200/000/fff" alt="" />
-                   <p>A full stack application using the google maps api and a sql database to locate and mark service stations using google maps! </p>    
-                </div>
-                <a href="https://github.com/henry-rennell/servo_api">Link to the groups repo here!</a>
-            </div>
-            <div className="project">
-                <h3 className="title">Meal planner app</h3>
-                <div className="project-info-wrapper">
-                    <img src="https://dummyimage.com/300x200/000/fff" alt="" />
-                   <p>A react app using edamam api and firebase and to store user data and save information to plan the week aheads meals</p>    
-                </div>
-                <a href="https://github.com/jrh1010101101010/react_meal_planner_app">Link to the groups repo here!</a>
+            <Carousel responsive={responsive}>
+                {projects.map((project, index) => (
+                    <div className="project" key={index}>
+                        <h3 className="title">{project.title}</h3>
+                        <div className="project-info-wrapper">
+                            <img src={project.img} alt="" />
+                            <p>{project.description}</p>
+                        </div>
+                        <a href={project.link}>Link to repo here!</a>
+                    </div>
+                ))}
+            </Carousel>
+            <div className="blog-link">
+                <h3>Wan to see more? More recent projects are posted on my <Link to="/blog">Blog</Link></h3>
             </div>
         </div>
     )
