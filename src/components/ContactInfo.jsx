@@ -1,7 +1,7 @@
 export default function ContactInfo (){
     return (
         <div className="contact">
-            <h1>Have any Questions?</h1>
+            <h1 id="contact">Have any Questions?</h1>
             <div className="contact-info">
                     <h4>contact info</h4>
                     <div className="email"></div>

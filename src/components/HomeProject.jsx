@@ -51,7 +51,7 @@ export default function HomeProject () {
 
     return (
         <div className="HomeProjects">
-            <h1>Projects</h1>
+            <h1 id="projects">Projects</h1>
             <Carousel responsive={responsive}>
                 {projects.map((project, index) => (
                     <div className="project" key={index}>

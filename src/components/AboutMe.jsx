@@ -1,7 +1,7 @@
 export default function AboutMe() {
     return (
       <div className="about-me">
-        <h1>About Me</h1>
+        <h1 id="about">About Me</h1>
         <div className="content-wrapper">
           <div className="about-photo">
             <img src="https://dummyimage.com/700x500/000/fff" alt="" />
@@ -25,3 +25,4 @@ export default function AboutMe() {
       </div>
     );
 }
+

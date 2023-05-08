@@ -8,9 +8,9 @@ export default function NavBar(){
             <h2 className="name">JRH</h2>
             <div className="links">
                 <Link to="/">Home</Link>
-                <Link to="/about">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contacts</a>
                 <Link to='/blog'>Blog</Link>
             </div>
         </div>
