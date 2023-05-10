@@ -2,33 +2,38 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     background-color: black;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
-}
+  }
   
-.name {
+  .name {
     font-size: 28px;
-    margin: 0;
+    margin: 20px 0 0 0;
     color: whitesmoke;
-}
+  }
   
-.links {
+  .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
   
-.links a {
+  .links a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 18px;
     margin-left: 20px;
-}
+  }
   
-.links a:hover {
+  .links a:hover {
     color: #1f8ea3;
-}
+  }
+  
+  main {
+    margin-top: 80px; 
+  }
+  

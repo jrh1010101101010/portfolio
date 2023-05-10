@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('/public/images/IMG_3122\ \(1\).jpg');
+    background-size: cover;
     background-color: #1f8ea3;
     color: #fff;
     text-align: center;
@@ -16,6 +18,7 @@
 .title {
     font-size: 3.5rem;
     margin: 0;
+    color: #00eaff;
 }
   
 .subtitle {
@@ -23,6 +26,7 @@
     margin: 0;
     margin-top: 1rem;
     font-weight: 400;
+    color: #00eaff;
 }
 
 .about-me {
@@ -30,23 +34,32 @@
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    background: linear-gradient(to bottom, #1f8ea3, #284184);
+    background: #FAF9F6;
     height: 100vh;
+    padding-top: 75px;
+    box-shadow: -2px 6px 4px -1px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -2px 6px 4px -1px rgba(0,0,0,0.31);
+    -moz-box-shadow: -2px 6px 4px -1px rgba(0,0,0,0.31);
 }
-  
+
+.about-title{
+    text-decoration: underline;
+    text-decoration-color: #1f8ea3;
+}
+
 .content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
     max-width: 1000px;
+    padding: 3%;
 }
   
 .about-photo img {
     width: 400px;
     height: 300px;
     object-fit: cover;
-    border-radius: 50%;
 }
   
 .about-text {
@@ -54,31 +67,39 @@
     padding-left: 50px;
     text-align: justify;
     line-height: 1.5;
+    background-color: lightcyan;
+    padding: 3%;
 }
 
 .HomeProjects {
-    background: linear-gradient(to bottom, #284184, #1f8ea3);
+    
     padding: 50px;
     height: 100vh;
+    padding-top: 75px;
+    background-color: #E8E8E8;
+    box-shadow: -2px 6px 4px -1px rgba(0,0,0,0.31);
+    -webkit-box-shadow: -2px 6px 4px -1px rgba(0,0,0,0.31);
+    -moz-box-shadow: -2px 6px 4px -1px rgba(0,0,0,0.31);
 }
 
 .HomeProjects h1 {
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
-    color: aliceblue;
+    color: black
 }
 
 .project {
-    background-color: #fff;
+    background-color: black;
     border-radius: 10px;
     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
     padding: 20px;
     margin-bottom: 30px;
+    color: white;
 }
 
-.title {
-    font-size: 1.5rem;
+.project-title {
+    
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -114,30 +135,18 @@
 
 .blog-link{
     text-align: center;
+    color: black;
 }
 
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1f8ea3;
-    padding-bottom: 20px;
-    
-}
+.blog-link a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
   
-.image-skills {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-top: 20px;
-}
-  
-.image-skills img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    margin-bottom: 0;
+.blog-link a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
 }
 
 .contact {
@@ -145,15 +154,17 @@
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    background-color: #1f8ea3;
-  }
+    background-color: 	#D8D8D8;
+    height: 100vh;
+    padding-top: 75px;
+}
   
-  .contact h1 {
+.contact h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-  }
+}
   
-  .contact-info {
+.contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,37 +173,81 @@
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    width: 80%;
+    width: 100%;
     max-width: 600px;
-  }
+    height: 50vh;
+}
   
-  .contact-info h4 {
+.contact-info h4 {
     font-size: 1.2rem;
-  }
+}
   
-  .contact-info .email p {
-    display: inline-block;
-    margin-left: 10px;
-  }
-  
-  .contact-info .phone {
+.contact-info .phone {
     display: flex;
     align-items: center;
-  }
+}
   
-  .contact-info .phone img {
+.contact-info .phone img {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-  }
+}
   
-  .contact-info .phone p {
+.contact-info .phone p {
     margin: 0;
+}
+  
+@media screen and (max-width: 600px) {
+    .contact-info {
+        width: 90%;
+    }
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+}
+
+.linkedin img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.git{
+    display: flex;
+    align-items: center;
+}
+
+.git img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
   }
   
-  @media screen and (max-width: 600px) {
-    .contact-info {
-      width: 90%;
-    }
+  .contact-info a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
   }
   

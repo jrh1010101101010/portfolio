@@ -26,46 +26,59 @@ export default function HomeProject () {
         {
             title: "Tic Tac Toe",
             description: "A basic game of tic tac toe with a with game counters and sounds included!",
-            img: "https://dummyimage.com/300x200/000/fff",
-            link: "https://git.generalassemb.ly/jhamblin/project1"
+            img: "/public/images/tic.png",
+            link: "https://git.generalassemb.ly/jhamblin/project1",
+            built: "Javascript, CSS and HTML",
+            colour: "#284184"
+            
         },
         {
             title: "Workout crud app",
             description: "A CRUD app built with express to record workouts completed. User search included to find workouts from other users and more!",
-            img: "https://dummyimage.com/300x200/000/fff",
-            link: "https://github.com/jrh1010101101010/project2"
+            img: "/public/images/workout.png",
+            link: "https://github.com/jrh1010101101010/project2",
+            built: "Express, EJS, Javascript, Postgres, Bcrypt",
+            colour: "#1f8ea3"
         },
         {
             title: "Servo app with google maps",
             description: "A full stack application using the google maps api and a sql database to locate and mark service stations using google maps!",
-            img: "https://dummyimage.com/300x200/000/fff",
-            link: "https://github.com/henry-rennell/servo_api"
+            img: '/public/images/servo.png',
+            link: "https://github.com/henry-rennell/servo_api",
+            built: "Express, EJS, Javascript, AXIOS, Postgres",
+            colour: "#284184"
         },
         {
             title: "Meal planner app",
             description: "A react app using edamam api and firebase and to store user data and save information to plan the week aheads meals",
-            img: "https://dummyimage.com/300x200/000/fff",
-            link: "https://github.com/jrh1010101101010/react_meal_planner_app"
+            img: "https://github.com/dimitrinossar/react_meal_planner_app/raw/main/public/readme/homepage.png",
+            link: "https://github.com/jrh1010101101010/react_meal_planner_app",
+            built: "Express, EJS, Javascript, Bcrypt",
+            colour: "#1f8ea3"
         }
     ]
 
     return (
-        <div className="HomeProjects">
-            <h1 id="projects">Projects</h1>
+        <div className="HomeProjects" id="projects">
+            <h1 >Projects</h1>
             <Carousel responsive={responsive}>
                 {projects.map((project, index) => (
-                    <div className="project" key={index}>
-                        <h3 className="title">{project.title}</h3>
+                    <div className="project" key={index} style={{backgroundColor: project.colour}}>
+                        <h2 className="project-title">{project.title}</h2>
                         <div className="project-info-wrapper">
                             <img src={project.img} alt="" />
-                            <p>{project.description}</p>
+                            <div>
+                               <p>{project.description}</p>
+                                <h4>Built With</h4>
+                                <p>{project.built}</p> 
+                            </div>
                         </div>
                         <a href={project.link}>Link to repo here!</a>
                     </div>
                 ))}
             </Carousel>
             <div className="blog-link">
-                <h3>Wan to see more? More recent projects are posted on my <Link to="/blog">Blog</Link></h3>
+                <h3>Want to see more? More recent projects are posted on my <Link to="/blog">Blog</Link></h3>
             </div>
         </div>
     )

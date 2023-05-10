@@ -5,7 +5,7 @@ export default function Blog (){
         {
            title: "Tensor Flow experiments",
            description: "My first experiments with tensorflow! Started with a basic model in react before building the backend and model with python that sends an image of a canvas to the backend and sending back a prediction.",
-           img: "https://dummyimage.com/300x200/000/fff",
+           img: "/public/images/digit.png",
            link: "https://github.com/jrh1010101101010/frontend_tensor"
         },
     ]

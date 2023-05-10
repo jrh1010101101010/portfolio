@@ -2,6 +2,10 @@ body {
     background-color: #284184;
 }
 
+.blog-wrapper h1{
+    text-align: center;
+}
+
 .blog {
     display: flex;
     flex-wrap: wrap;
