@@ -6,5 +6,3 @@ export default function Openining (){
         </div>
     )
 }
-
-// background image as a photo from my 

@@ -4,7 +4,7 @@ export default function AboutMe() {
       <h1  className="about-title">About Me</h1>
       <div className="content-wrapper">
         <div className="about-photo">
-          <img src="https://dummyimage.com/700x500/000/fff" alt="" />
+          <img src="https://i.imgur.com/JduK4Dx.jpeg" alt="" />
         </div>
         <article className="about-text">
           <p>
