@@ -7,6 +7,7 @@ export default function AboutMe() {
           <img src="https://i.imgur.com/JduK4Dx.jpeg" alt="" />
         </div>
         <article className="about-text">
+          <h2>Hi my name is Jack!</h2>
           <p>
             I am a junior software engineer that has just graduated from general
             assembly in their software engineering immersive, as well as just
