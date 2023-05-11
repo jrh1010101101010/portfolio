@@ -25,7 +25,7 @@ export default function HomeProject () {
         {
             title: "Tic Tac Toe",
             description: "A basic game of tic tac toe with a with game counters and sounds included!",
-            img: "https://i.imgur.com/BbcCQg8.png",
+            img: "https://i.imgur.com/jOfbT7x.png",
             link: "https://git.generalassemb.ly/jhamblin/project1",
             built: "Javascript, CSS and HTML",
             colour: "#284184"
