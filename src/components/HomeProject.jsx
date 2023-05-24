@@ -21,31 +21,7 @@ export default function HomeProject () {
         }
     }
 
-    const projects = [
-        {
-            title: "Tic Tac Toe",
-            description: "A basic game of tic tac toe with a with game counters and sounds included!",
-            img: "https://i.imgur.com/jOfbT7x.png",
-            link: "https://git.generalassemb.ly/jhamblin/project1",
-            built: "Javascript, CSS and HTML",
-            colour: "#284184"
-        },
-        {
-            title: "Workout crud app",
-            description: "A CRUD app built with express to record workouts completed. User search included to find workouts from other users and more!",
-            img: "https://i.imgur.com/JuYmWkR.png",
-            link: "https://github.com/jrh1010101101010/project2",
-            built: "Express, EJS, Javascript, Postgres, Bcrypt",
-            colour: "#1f8ea3"
-        },
-        {
-            title: "Servo app with google maps",
-            description: "A full stack application using the google maps api and a sql database to locate and mark service stations using google maps!",
-            img: 'https://i.imgur.com/TtCVZaj.png',
-            link: "https://github.com/henry-rennell/servo_api",
-            built: "Express, EJS, Javascript, AXIOS, Postgres",
-            colour: "#284184"
-        },
+    const projects = [ 
         {
             title: "Meal planner app",
             description: "A react app using edamam api and firebase and to store user data and save information to plan the week aheads meals",
@@ -61,7 +37,31 @@ export default function HomeProject () {
             link: "https://github.com/jrh1010101101010/frontend_tensor",
             built: "React, TensorFlow, Flask, Python",
             colour: "#284184"
-         }
+         },
+         {
+            title: "Workout crud app",
+            description: "A CRUD app built with express to record workouts completed. User search included to find workouts from other users and more!",
+            img: "https://i.imgur.com/JuYmWkR.png",
+            link: "https://github.com/jrh1010101101010/project2",
+            built: "Express, EJS, Javascript, Postgres, Bcrypt",
+            colour: "#1f8ea3"
+        },
+        {
+            title: "Servo app with google maps",
+            description: "A full stack application using the google maps api and a sql database to locate and mark service stations using google maps!",
+            img: 'https://i.imgur.com/TtCVZaj.png',
+            link: "https://github.com/henry-rennell/servo_api",
+            built: "Express, EJS, Javascript, AXIOS, Postgres",
+            colour: "#284184"
+        },
+         {
+            title: "Tic Tac Toe",
+            description: "A basic game of tic tac toe with a with game counters and sounds included!",
+            img: "https://i.imgur.com/jOfbT7x.png",
+            link: "https://git.generalassemb.ly/jhamblin/project1",
+            built: "Javascript, CSS and HTML",
+            colour: "#284184"
+        },
 
     ]
 
